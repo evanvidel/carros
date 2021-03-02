@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".car.view.CarrosActivity">
+
+
+    <TextView
+        android:id="@+id/marca_carro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-black"
+        android:background="@color/orange"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_carros"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/marca_carro"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</RelativeLayout>
